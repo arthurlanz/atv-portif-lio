@@ -46,72 +46,133 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*========================================================
-                         GERAL
-==========================================================*/
+
+/*=============================================================
+                            GERAL
+=============================================================*/
 html{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-        font-size: calc(10px + 1vw);
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(12px + 1vw);
 }
 a{
-    color: black;
-    text-decoration: none;
+    color: black; text-decoration: none;
 }
-/*=======================================================
-                          TOPO
-=========================================================*/
+main {
+	margin: 0 15vw 0 15vw;
+}
+/*=============================================================
+                            TOPO
+=============================================================*/
 header {
 	margin: 5vw 5vw 5vw 5vw;
 }
 header nav ul{
-    display: flex;
+    display: flex; 
     justify-content: right;
-}                        
-header nav ul li{
-	margin: 0 10px 0 10px;
+    
 }
-header nav ul li.atual a {
+header nav ul li {
+	margin: 0 10px 0 10px;	
+}
+header nav ul li.atual a{
 	color: #ff6464;
 }
-/*=======================================================
-                          CONTEÚDO
-=========================================================*/
 
-main.works{
-	margin: 0 15vw 0 15vw;
+/*=============================================================
+                            CONTEÚDO - WORKS
+=============================================================*/
+
+main.works h1 {
+	font-size: 3rem;
 }
-main.works h1{
-	font-size: 1.5rem;
+main.works section {
+	border-bottom: 2px solid gray;
+	padding: 2vw 0 4vw 0;
 }
-main.works section{
-	border-bottom: 1px solid gray;
-	padding: 0 0 4vw 0;
-}
-main.works section:last-child{
+main.works section:last-child {
 	border: none;
 }
-main.works section h2{
-	font-size: 1rem;
-	margin: 2vw 0 0 0;
+main.works section h2 {
+	font-size: 1.5rem;
+	margin: 3vw 0 0 0;
 	font-weight: bold;
 }
-main section p{
-	margin: 1.5vw 0 0 0;
+main.works section p.Dashboard{
+	margin: 2vw 0 4vw 0;
+	font-size: 1.2rem;
 }
 main.works section p span{
-	background: #ff6464;
+	background: #ff6464; 
 	border-radius: 20px;
 	color: white;
 	font-weight: bold;
-	padding: 3px 10px 3px 10px;
+	padding: 1px 10px 1px 10px;
 }
-/*=======================================================
-                          FOOTER
-=========================================================*/
+main.works p.text {
+	margin: 0 0 3vw 0;
+}
+/*=============================================================
+                            CONTEÚDO - HOME PAGE
+=============================================================*/
 
-footer{
+main section.banner{
+	display: flex;
+	margin: 0 0 2vw 0;
+}
+section.banner h1 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+section.banner p {
+	margin: 3vw 10vw 3vw 0;
+}
+section.banner button {
+	background-color: #ff6464;
+	color: white;
+	padding: 16px 25px 16px 25px;
+	font-size: 1.2rem;
+	border: none;
+	font-weight: bold;
+	border-radius: 3px;
+	margin: 0 0 5vw 0;
+}
+section.rt-posts {
+	background-color: #EDF7FA;
+	padding: 1vw 2vw 1vw 2vw;
+}
+section.rt-posts h2 {
+	font-size: 1.5rem;
+	margin: 2vw 0 4vw 0;
+}
+section.rt-posts h3 {
+	font-weight: bold;
+	margin: 0 0 2vw 00;
+}
+section.rt-posts ul {
+	display: flex;
+}
+section.rt-posts ul li {
+	background-color: white;
+	margin: 0.75vw;
+	padding: 2vw;
+	border-radius: 7px;
+}
+section.rt-posts ul li p {
+	margin:  0 0 2vw 10px;
+}	
+/*=============================================================
+							FOOTER
+=============================================================*/
+
+footer {
 	text-align: center;
-	margin: 2vw 0 2vw 0;
+	margin: 3vw 0 10vw 0;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+footer ul li {
+	margin: 0px 7px 40px 20px;
+	font-size: 2.3rem;
 }
